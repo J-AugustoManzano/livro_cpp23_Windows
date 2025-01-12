@@ -1,0 +1,1 @@
+Este conteúdo é parte integrante do livro "C++23 para Windows: Guia de Introdução para Iniciantes", podendo ser usado livremente pelos propritários da cópia impressa deste material. Vetado outras formas de uso.
