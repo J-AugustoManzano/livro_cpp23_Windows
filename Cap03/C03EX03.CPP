@@ -8,10 +8,10 @@ int main(void)
 
   int32_t  a, b, x;
 
-  cout << "Entre o primeiro valor..: "; cin >> a;
+  cout << "Entre o primeiro valor ..: "; cin >> a;
   cin.ignore(80, '\n');
 
-  cout << "Entre o segundo valor...: "; cin >> b;
+  cout << "Entre o segundo valor ...: "; cin >> b;
   cin.ignore(80, '\n');
 
   cout << "\n";
