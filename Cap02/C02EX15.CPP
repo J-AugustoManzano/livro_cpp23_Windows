@@ -48,15 +48,15 @@ int main(void)
   cout << "inteiro (+) ........: ";
   cout << setw(3) << sizeof(ipos16) * 8 << " bits\n";
   cout << "inteiro (-) ........: ";
-  cout << setw(3) << sizeof(ipos16) * 8 << " bits\n";
+  cout << setw(3) << sizeof(ineg16) * 8 << " bits\n";
   cout << "inteiro (+) ........: ";
   cout << setw(3) << sizeof(ipos32) * 8 << " bits\n";
   cout << "inteiro (-) ........: ";
-  cout << setw(3) << sizeof(ipos32) * 8 << " bits\n";
+  cout << setw(3) << sizeof(ineg32) * 8 << " bits\n";
   cout << "inteiro (+) ........: ";
   cout << setw(3) << sizeof(ipos64) * 8 << " bits\n";
   cout << "inteiro (-) ........: ";
-  cout << setw(3) << sizeof(ipos64) * 8 << " bits\n";
+  cout << setw(3) << sizeof(ineg64) * 8 << " bits\n";
   cout << "caractere (+) ......: ";
   cout << setw(3) << sizeof(cpos08) * 8 << " bits\n";
   cout << "caractere (-) ......: ";
