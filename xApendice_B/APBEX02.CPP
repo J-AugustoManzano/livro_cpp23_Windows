@@ -13,7 +13,7 @@ int main(void)
   cin >> palavra;
   cin.ignore(80, '\n');
 
-  for (int i = 0; i <= palavra.length(); ++i)
+  for (size_t i = 0; i <= palavra.length(); ++i)
     cout << palavra.substr(0, i) << endl;
 
   cout << endl;
