@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <cctype>
+#include <algorithm>
 
 using namespace std;
 
@@ -33,7 +34,7 @@ int main(void)
     cout << "A frase nao e um palindromo." << endl;
   
   cout << endl;
-  cout << "Tecle <Enter> para encerrar... ";
+  cout << "Press <Enter> to exit... ";
   cin.get();
   return 0;
 }
