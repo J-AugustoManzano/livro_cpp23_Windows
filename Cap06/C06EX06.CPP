@@ -7,8 +7,8 @@ using namespace std;
 int main(void)
 {
 
-  int a = 1;
-  int *pa = nullptr;
+  int32_t  a = 1;
+  int32_t  *pa = nullptr;
 
   pa = &a;
 
