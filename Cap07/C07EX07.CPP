@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main() 
+int main(void) 
 {
   // Definição do arranjo usando std::array
   array<string, 10> nome;
