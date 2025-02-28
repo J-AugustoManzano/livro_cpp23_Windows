@@ -11,7 +11,7 @@ using namespace std;
 int main(void)
 {
 
-  bool atraso {false};
+  // bool atraso {false};
   uint16_t diasAtraso {0};
   double valorTitulo, valorFinal {0.0};
   double valorDesc {0.0};
