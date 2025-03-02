@@ -7,8 +7,8 @@ using namespace std;
 
 int main(void)
 {
-  println("Positico com sinal ....: {:+}", 10);
-  println("Com espçao em branco ..: {: }", 10);
+  println("Positivo com sinal ....: {:+}", 10);
+  println("Com espaco em branco ..: {: }", 10);
 
   println("");
   print("Tecle <Enter> para encerrar... ");
