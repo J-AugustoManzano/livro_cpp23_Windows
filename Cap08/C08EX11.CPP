@@ -4,11 +4,11 @@
 #include <iomanip>
 #include <string>
 #include <vector>
+#include <limits>
 
 using namespace std;
 
-class Aluno
-{
+class Aluno {
   private:
     string nome;
     vector<float> notas;
@@ -26,14 +26,14 @@ class Aluno
     }
 
     void PoeNota(float nota, int32_t pos) {
-      if (pos >= 0 and pos < notas.size()) {
-        notas[pos] = nota;
+      if (pos >= 0 and static_cast<size_t>(pos) < notas.size()) {
+        notas[static_cast<size_t>(pos)] = nota;
       }
     }
 
     float PegaNota(int32_t pos) const {
-      if (pos >= 0 and pos < notas.size()) {
-        return notas[pos];
+      if (pos >= 0 and static_cast<size_t>(pos) < notas.size()) {
+        return notas[static_cast<size_t>(pos)];
       }
       return 0;
     }
@@ -51,8 +51,7 @@ class Aluno
     }
 };
 
-int main(void)
-{
+int main(void) {
   int32_t numAlunos, numNotas = 4;
   float media_gp = 0;
   string nome;
@@ -64,9 +63,9 @@ int main(void)
   cin >> numAlunos;
   cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-  alunos.reserve(numAlunos);
+  alunos.reserve(static_cast<size_t>(numAlunos));
 
-  for (size_t i = 0; i < numAlunos; ++i) {
+  for (int32_t i = 0; i < numAlunos; ++i) {
     cout << endl;
     cout << "Cadastro de aluno " << i + 1 << endl;
     cout << endl;
@@ -79,7 +78,7 @@ int main(void)
     cout << endl;
     cout << "Informe as notas:" << endl;
     cout << endl;
-    for (size_t j = 0; j < numNotas; ++j) {
+    for (int32_t j = 0; j < numNotas; ++j) {
       float nota;
       cout << j + 1 << "a. nota..........: ";
       cin >> nota;
@@ -98,7 +97,7 @@ int main(void)
   cout << resetiosflags(ios::left);
 
   cout << setiosflags(ios::right);
-  for (size_t j = 0; j < numNotas; ++j)
+  for (int32_t j = 0; j < numNotas; ++j)
     cout << setw(7) << "Nota" << j + 1;
   cout << setw(8) << "Media";
   cout << endl << endl;
@@ -109,7 +108,7 @@ int main(void)
     cout << setw(41) << aluno.PegaNome();
     cout << resetiosflags(ios::left);
     cout << setiosflags(ios::right);
-    for (size_t j = 0; j < numNotas; ++j)
+    for (int32_t j = 0; j < numNotas; ++j)
       cout << setw(8) << aluno.PegaNota(j);
     cout << setw(8) << aluno.PegaMedia();
     cout << endl;
