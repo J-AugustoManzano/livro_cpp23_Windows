@@ -26,13 +26,15 @@ class Aluno {
     }
 
     void PoeNota(float nota, int32_t pos) {
-      if (pos >= 0 and static_cast<size_t>(pos) < notas.size()) {
+      if (pos >= 0 and static_cast<size_t>(pos) < 
+        notas.size()) {
         notas[static_cast<size_t>(pos)] = nota;
       }
     }
 
     float PegaNota(int32_t pos) const {
-      if (pos >= 0 and static_cast<size_t>(pos) < notas.size()) {
+      if (pos >= 0 and static_cast<size_t>(pos) < 
+        notas.size()) {
         return notas[static_cast<size_t>(pos)];
       }
       return 0;
