@@ -25,9 +25,11 @@ int main(void)
 
   // Lê do arquivo enquanto não chegar ao final
   while (arqbin.read(numeroCaracteres, sizeof(tamanho))) {
-    vector<char> mensagem(tamanho);
+    // Aloca um byte extra para o terminador nulo
+    vector<char> mensagem(tamanho + 1);
     // Lê a mensagem
     arqbin.read(mensagem.data(), tamanho);
+    mensagem[tamanho] = '\0'; // Termina a string com nulo
     cout << "Mensagem: " << mensagem.data() << endl;
   }
 
