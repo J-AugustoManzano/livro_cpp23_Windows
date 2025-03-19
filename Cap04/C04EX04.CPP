@@ -7,8 +7,8 @@ using namespace std;
 
 int main(void)
 {
-  uint16_t n, i = 1;
-  uint16_t fat {1};
+  uint16_t n, i;
+  uint16_t fat;
   char resp {'S'};
 
   do
@@ -17,8 +17,8 @@ int main(void)
       cout << "Fatorial de que valor: "; cin >> n;
       cin.ignore(80, '\n');
 
+      fat = 1;
       i = 1;
-	  fat = 1;
       do
         {
            fat *= i;

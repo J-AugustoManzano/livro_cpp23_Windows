@@ -7,8 +7,7 @@ using namespace std;
 
 int main(void)
 {
-  uint16_t n, i = 1;
-  uint16_t fat {1};
+  uint16_t n; 
   char resp {'S'};
 
   while (toupper(resp) == 'S')
@@ -17,6 +16,7 @@ int main(void)
       cout << "Fatorial de que valor: "; cin >> n;
       cin.ignore(80, '\n');
 
+      uint16_t fat {1}, i = 1;
       while (i <= n)
         {
            fat *= i;
