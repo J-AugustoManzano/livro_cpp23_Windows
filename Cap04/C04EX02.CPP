@@ -16,7 +16,7 @@ int main(void)
       cout << "Fatorial de que valor: "; cin >> n;
       cin.ignore(80, '\n');
 
-      fat {1}, i = 1;
+      fat = 1; i = 1;
       while (i <= n)
         {
            fat *= i;
