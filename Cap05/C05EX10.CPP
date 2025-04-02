@@ -91,7 +91,7 @@ void rotdivisao(void)
     }
   else
     {
-      r = calculo(a, b, '-');
+      r = calculo(a, b, '/');
       saida();
     }
 }
