@@ -16,16 +16,16 @@ int main (void)
   pa = &a;
   pb = &b;
 
-  cout << "Valor A = " << *pa << " no endereco " << &pa;
+  cout << "Valor A = " << *pa << " no endereco " << pa;
   cout << "." << endl;
-  cout << "Valor B = " << *pb << " no endereco " << &pb;
+  cout << "Valor B = " << *pb << " no endereco " << pb;
   cout << "." << endl;
   cout << endl;
 
   if (pa > pb)
-    cout << "PA esta a frente de *PB.";
+    cout << "Endereco A antes do endereco B.";
   else
-    cout << "PA nao esta a frente de *PB.";
+    cout << "Endereco A depois do endereco B.";
   cout << endl;
 
   cout << endl;
