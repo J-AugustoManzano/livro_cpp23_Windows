@@ -15,7 +15,8 @@ struct CadastroAluno {
 };
 
 // Função de comparação
-bool cmpNome(const CadastroAluno &a, const CadastroAluno &b) {
+bool cmpNome(const CadastroAluno &a, const CadastroAluno &b) 
+{
   return a.nome < b.nome;
 }
 
