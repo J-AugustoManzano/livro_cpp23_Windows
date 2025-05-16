@@ -22,7 +22,6 @@ bool cmpNome(const CadastroAluno &a, const CadastroAluno &b) {
 int main(void)
 {
   vector<CadastroAluno> alunos(8);
-  CadastroAluno x;
   float soma_nt, soma_md, media_gp;
 
   cout << setprecision(2) << fixed;
