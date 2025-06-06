@@ -25,16 +25,31 @@ void idade(string dtNasc, int16_t &a, int16_t &m, int16_t &d)
   // Calcula a idade
   a = anoAtual - anoNasc;
   m = mesAtual - mesNasc;
+  d = diaAtual - diaNasc;
+
+  if (d < 0) { // Se dia nao ocorreu neste mes
+    m--;
+
+    // Ajuste para pegar dias do mês anterior
+    int16_t mesAnterior = mesAtual - 1;
+    int16_t anoAnterior = anoAtual;
+    if (mesAnterior == 0) {
+      mesAnterior = 12;
+      anoAnterior--;
+    }
+
+    // Monta string no formato "DD/MM/AAAA"
+    char buffer[11];
+    snprintf(buffer, sizeof(buffer), "01/%02d/%04d", mesAnterior, anoAnterior);
+    std::string dataAnterior(buffer);
+
+    d += ultimoDiaNoMes(dataAnterior);
+  }
+
   if (m < 0) { // Se mes nao ocorreu neste ano
     a--;
     m += 12;
   }
-  d = diaAtual - diaNasc;
-  if (d < 0) { // Se dia nao ocorreu neste mes
-    m--;
-    d += ultimoDiaNoMes(dtNasc);
-  }
-
 }
 
 int main(void)
