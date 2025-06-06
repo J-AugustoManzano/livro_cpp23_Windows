@@ -40,7 +40,8 @@ void idade(string dtNasc, int16_t &a, int16_t &m, int16_t &d)
 
     // Monta string no formato "DD/MM/AAAA"
     char buffer[11];
-    snprintf(buffer, sizeof(buffer), "01/%02d/%04d", mesAnterior, anoAnterior);
+    snprintf(buffer, sizeof(buffer), "01/%02d/%04d", 
+      vmesAnterior, anoAnterior);
     std::string dataAnterior(buffer);
 
     d += ultimoDiaNoMes(dataAnterior);
