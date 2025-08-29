@@ -1,7 +1,7 @@
 // C03EX05.CPP
 
 #include <iostream>
-#include <ciso646> // opcional no GCC
+#include <ciso646> // opcional no GCC / Clang
 
 using namespace std;
 
@@ -24,3 +24,4 @@ int main(void)
   cin.get();
   return 0;
 }
+
